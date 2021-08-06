@@ -27,7 +27,7 @@ class Lion extends Cat{
 } */
 
 
-class Password{
+/* class Password{
     constructor(pass){
         this.pass = pass;
         this.haspass = false;
@@ -42,4 +42,32 @@ class Password{
         }
     }
 }
-const firs = new Password(12)
+const firs = new Password(12) */
+
+
+class Person{
+    constructor(firstname){
+        this.firstname = firstname;
+        this.indicator = 0;
+    }
+
+    get getName(){
+        return this._firstname;
+    }
+
+    set setName(new_name){
+        if( typeof new_name !== 'string'){
+            throw new Error ('Only string type!')
+        }
+
+        if (this.indicator < 3){
+            this.indicator +=1;
+            this._firstname = new_name;
+            return;
+        }else{
+            throw new Error('You can\'t change name in four times')
+        }
+    }
+}
+
+const person1 = new Person;
