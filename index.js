@@ -45,7 +45,7 @@ class Lion extends Cat{
 const firs = new Password(12) */
 
 
-class Person{
+/* class Person{
     constructor(firstname){
         this.firstname = firstname;
         this.indicator = 0;
@@ -70,4 +70,38 @@ class Person{
     }
 }
 
-const person1 = new Person;
+const person1 = new Person; */
+
+/* class Queue{
+    constructor(){
+        this.queue = {};
+        this.tail = 0;
+        for (let i = 0; i < arguments.length; i++) {
+            const element = arguments[i]
+            this.push(element)
+        }
+        this.head = 0;
+    }
+
+    push (element) {
+        this.queue[this.tail++] = element;
+    }
+
+    shift () {
+        if (this.tail === this.head)
+            return undefined
+
+        const element = this.queue[this.head];
+        delete this.queue[this.head++];
+        return element;
+    }
+}
+
+const queue = new Queue(1, 2, 3, 4, 5, 6)
+console.log(queue) */
+
+const map = new Map();
+
+map.set('userId', 1);
+map.set('undefined', 'default');
+map.set('default', undefined);
