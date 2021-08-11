@@ -26,7 +26,6 @@ class Lion extends Cat{
     };
 } */
 
-
 /* class Password{
     constructor(pass){
         this.pass = pass;
@@ -43,7 +42,6 @@ class Lion extends Cat{
     }
 }
 const firs = new Password(12) */
-
 
 /* class Person{
     constructor(firstname){
@@ -100,8 +98,56 @@ const person1 = new Person; */
 const queue = new Queue(1, 2, 3, 4, 5, 6)
 console.log(queue) */
 
-const map = new Map();
+/* const map = new Map();
 
 map.set('userId', 1);
 map.set('undefined', 'default');
-map.set('default', undefined);
+map.set('default', undefined); */
+
+/* const month = 9;
+const season = Math.ceil(month / 3);
+switch (season) {
+  case 1:
+    console.log("Spring");
+    break;
+  case 2:
+    console.log("Summer");
+    break;
+  case 3:
+    console.log("Autumn");
+    break;
+  case 4:
+    console.log("Winter");
+    break;
+}
+ */
+/* let a = 0;
+for (let i = 0; i <= 5; i++) {
+    a += i;
+}
+console.log(a); */
+
+const age = 12;
+if (age >= 18){
+    console.log('Совершенолетний');
+}else{
+    console.log('Не совершенолетний')
+}
+
+const num = 12;
+const number = Math.sqrt(num);
+
+/*1*/
+if (number % 2 === 0){
+    console.log('Остатка нет');
+}else{
+    console.log('Остаток есть');
+}
+
+/*2*/
+if (number - Math.floor(number) === 0){
+    console.log('Остатка нет');
+}else{
+    console.log('Остаток есть');
+}
+
