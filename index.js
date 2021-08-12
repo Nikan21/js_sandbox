@@ -127,7 +127,7 @@ for (let i = 0; i <= 5; i++) {
 }
 console.log(a); */
 
-const age = 12;
+/* const age = 12;
 if (age >= 18){
     console.log('Совершенолетний');
 }else{
@@ -137,17 +137,50 @@ if (age >= 18){
 const num = 12;
 const number = Math.sqrt(num);
 
-/*1*/
+
 if (number % 2 === 0){
     console.log('Остатка нет');
 }else{
     console.log('Остаток есть');
 }
 
-/*2*/
+
 if (number - Math.floor(number) === 0){
     console.log('Остатка нет');
 }else{
     console.log('Остаток есть');
 }
+ */
+
+/* const array = [];
+for (let i = 1; i <= 10; i++) {
+  array.push(i);
+}
+console.log(array);
+
+const array2 = array.slice(0);
+console.log(array2);
+
+const array3 = [];
+for (let i = array2.length / 2; i < array2.length; i++) {
+  array3.push(array2[i]);
+}
+console.log(array3);
+ */
+
+/* const array = [5, 55, 3, 324, 33, 12, 654];
+
+const result = Math.max(...array)
+console.log(result) */
+
+/* const array = [1, 2, 3, 4];
+const array1 = [...array, ...array];
+console.log(array1); */
+
+/* function max(...theArgs){
+    console.log(theArgs);
+    console.log(arguments);
+}
+console.log(max(1, 2, 3)) */
+
 
