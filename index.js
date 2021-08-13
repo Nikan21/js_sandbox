@@ -183,4 +183,32 @@ console.log(array1); */
 }
 console.log(max(1, 2, 3)) */
 
+let Numm = 0;
+const nummDisplay = document.querySelector('#Number');
 
+function displayNumber(){
+    nummDisplay.textContent = Numm;
+}
+
+displayNumber()
+
+function addOne(){
+    Numm +=1;
+    console.log(Numm);
+    displayNumber()
+    nummDisplay.style.border = '3px solid green';
+}
+
+function removeOne(){
+    Numm -=1;
+    console.log(Numm);
+    displayNumber()
+    nummDisplay.style.border = '3px solid red';
+}
+
+function addNum(){
+    const userValue = Number(prompt('Какое число нужно добавить?'));
+    Numm += userValue;
+    console.log(Numm);
+    displayNumber()
+}
