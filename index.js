@@ -183,7 +183,7 @@ console.log(array1); */
 }
 console.log(max(1, 2, 3)) */
 
-let Numm = 0;
+/* let Numm = 0;
 const nummDisplay = document.querySelector('#Number');
 
 function displayNumber(){
@@ -211,4 +211,61 @@ function addNum(){
     Numm += userValue;
     console.log(Numm);
     displayNumber()
+} */
+
+const array = [1, 2, 3];
+
+function copy(){
+ const array2 = [...array];
+ return array2;
 }
+
+const array3 = [1, 2, 3];
+const array4 = [4, 5, 6];
+
+function concat (){
+    return [...array3, ...array4];
+}
+
+const obj = {0:1, 1:2, 2:3};
+const obj1 = {3:4, 4:5, 5:6};
+
+function concatObj (){
+    const obj2 = {...obj, ...obj1};
+    return obj2;
+}
+
+const array5 = [1, 2];
+const array6 = [3, 4];
+const array7 = [5, 6];
+
+function addArray (){
+    return [array5, ...array6, ...array7];
+}
+
+function create (...value){
+    return value;
+}
+
+console.log(create(1, 2, 3, 4));
+
+function splice (value1, value2, ...otherValue){
+    return value1, value2, otherValue;
+}
+
+console.log(splice(1, 2, 3, 4, 5, 6, 7));
+
+
+/*Need ask for this task*/
+function deleteOne (indexDelete, array, ...newValue){
+    const deleteElement = array[indexDelete];
+    delete array[indexDelete];
+    console.log(deleteElement);
+    array[indexDelete] = newValue;
+    return array;
+}
+
+console.log(deleteOne(2, [1, 2, 3, 4], 5));
+
+
+
