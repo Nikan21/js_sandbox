@@ -213,7 +213,7 @@ function addNum(){
     displayNumber()
 } */
 
-const array = [1, 2, 3];
+/* const array = [1, 2, 3];
 
 function copy(){
  const array2 = [...array];
@@ -256,7 +256,6 @@ function splice (value1, value2, ...otherValue){
 console.log(splice(1, 2, 3, 4, 5, 6, 7));
 
 
-/*Need ask for this task*/
 function deleteOne (indexDelete, array, ...newValue){
     const deleteElement = array[indexDelete];
     delete array[indexDelete];
@@ -265,7 +264,7 @@ function deleteOne (indexDelete, array, ...newValue){
     return array;
 }
 
-console.log(deleteOne(2, [1, 2, 3, 4], 5));
+console.log(deleteOne(2, [1, 2, 3, 4], 5)); */
 
 
 
