@@ -266,5 +266,80 @@ function deleteOne (indexDelete, array, ...newValue){
 
 console.log(deleteOne(2, [1, 2, 3, 4], 5)); */
 
+/* const array = [1, 2, 3, 4, 5, 6];
 
+
+
+function getFirstElement (){
+    const [first] = array;
+    return first;
+}
+
+function getFifeElement (){
+    const [,,,,fife] = array;
+    return fife;
+}
+
+function getSecondAndThirdElement (){
+    const [,second, third] = array;
+    return [second, third];
+}
+
+const userInfo = {
+    name: 'Alex',
+    surname: 'McRed',
+    email: 'alexmcred@gmail.com',
+    phones: {
+        home: 242565,
+        mobile: 3559284,
+    },
+    adress: {
+        street: {
+            name: 'Winter',
+            number: 22,
+        }
+    },
+    city: 'USA'
+}
+
+function getUserEmail (){
+    const {email: email} = userInfo;
+    return email;
+}
+
+function getUserFullName (){
+    const {name: name, surname: surname} = userInfo;
+    const fullName = `${name} ${surname}`;
+    return fullName;
+}
+
+function getUserPhones (){
+    const {phones: phones} = userInfo;
+    return phones;
+}
+
+function getUserAddress (){
+    const {adress: adress} = userInfo;
+   
+    if (Boolean(adress) === false){
+        return null;
+    }else{
+        const copyObj = Object.assign({}, adress);
+        return copyObj;
+    }
+
+}
+
+function getUserStreetName (){
+    const {adress: { street: { name: nameStreet}}} = userInfo;
+    
+    return nameStreet;
+} */
+
+/* try{
+    new Symbol()
+}
+catch(error){
+    console.dir(error);
+} */
 
